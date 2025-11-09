@@ -14,6 +14,11 @@ It lets you record long-duration timelapses directly from your laptop camera —
 - Configurable intervals and durations
 - Production-ready and idiomatic code
 
+## Todo
+- [x] basic app
+- [ ] live feed of recording
+- [ ] improve TUI
+
 ## Quick Start
 
 ### Prerequisites
