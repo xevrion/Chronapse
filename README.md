@@ -10,9 +10,7 @@ It lets you record long-duration timelapses directly from your laptop camera —
 - Beautiful terminal UI with real-time progress tracking
 - Efficient webcam capture using OpenCV
 - Automatic video compilation with FFmpeg
-- Graceful shutdown and error handling
 - Configurable intervals and durations
-- Production-ready and idiomatic code
 
 ## Todo
 - [x] basic app
@@ -66,26 +64,6 @@ See [USAGE.md](USAGE.md) for:
 - Safety recommendations for long recordings
 - Troubleshooting guide
 - Performance optimization tips
-
-## Project Structure
-
-```
-Chronapse/
-├── main.go           # Go Bubbletea TUI (frontend)
-├── timelapse.py      # Python recorder (backend)
-├── requirements.txt  # Python dependencies
-├── go.mod           # Go module definition
-├── README.md        # This file
-└── USAGE.md         # Comprehensive documentation
-```
-
-## How It Works
-
-1. **Go TUI** collects user input and spawns Python subprocess
-2. **Python backend** captures frames from webcam at specified intervals
-3. **Progress updates** stream from Python to Go via stdout
-4. **FFmpeg** compiles frames into MP4 video
-5. **Cleanup** removes temporary frames automatically
 
 ## Requirements
 

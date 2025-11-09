@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/xevrion/chronapse/blob/main/README.md
+    about: Read the project documentation and usage guide
+  - name: Discussions
+    url: https://github.com/xevrion/chronapse/discussions
+    about: Ask questions and discuss ideas with the community

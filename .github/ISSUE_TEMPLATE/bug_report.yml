@@ -1,0 +1,162 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in Chronapse
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below to help us understand and fix the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug you encountered...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Start Chronapse with command '...'
+        2. Set interval to '...'
+        3. Set duration to '...'
+        4. Press Enter to start recording
+        5. See error
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what should have happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what actually happened...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - Ubuntu
+        - Debian
+        - Fedora
+        - Arch Linux
+        - Other Linux distribution
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      description: What version of the OS are you running?
+      placeholder: e.g., Ubuntu 22.04, Debian 12
+    validations:
+      required: true
+
+  - type: input
+    id: go-version
+    attributes:
+      label: Go Version
+      description: Run `go version` and paste the output
+      placeholder: e.g., go version go1.21.5 linux/amd64
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      description: Run `python3 --version` and paste the output
+      placeholder: e.g., Python 3.10.12
+    validations:
+      required: true
+
+  - type: input
+    id: ffmpeg-version
+    attributes:
+      label: FFmpeg Version
+      description: Run `ffmpeg -version | head -n1` and paste the output
+      placeholder: e.g., ffmpeg version 4.4.2
+    validations:
+      required: false
+
+  - type: input
+    id: opencv-version
+    attributes:
+      label: OpenCV Version
+      description: Run `python3 -c "import cv2; print(cv2.__version__)"` and paste the output
+      placeholder: e.g., 4.5.4
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs
+      description: If applicable, paste any error messages or logs
+      placeholder: Paste error output here...
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Drag and drop screenshots here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: |
+        - Are you using a USB webcam or built-in camera?
+        - Does this happen consistently or intermittently?
+        - Have you tried different settings?
+        - Any recent system changes?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please verify the following before submitting
+      options:
+        - label: I have searched existing issues to ensure this bug hasn't been reported
+          required: true
+        - label: I have tested with the latest version of Chronapse
+          required: true
+        - label: I have verified all dependencies are correctly installed
+          required: true
+        - label: I have included all relevant information above
+          required: true
