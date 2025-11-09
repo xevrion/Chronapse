@@ -1,5 +1,8 @@
 # Chronapse
 
+![License](https://img.shields.io/github/license/xevrion/Chronapse)
+![Stars](https://img.shields.io/github/stars/xevrion/Chronapse)
+
 **Capture time. Compress moments. Command the lapse.**
 
 Chronapse is a Linux-only timelapse recorder that blends the elegance of Go's [Bubbletea](https://github.com/charmbracelet/bubbletea) TUI with the simplicity of Python and OpenCV.

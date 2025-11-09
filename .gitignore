@@ -58,6 +58,18 @@ Thumbs.db
 # Logs
 *.log
 
+# Security - Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.yaml
+secrets.yml
+config/secrets.*
+credentials.json
 
 # Markdown
 ARCHITECTURE.md
