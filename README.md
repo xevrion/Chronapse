@@ -76,8 +76,9 @@ See [USAGE.md](USAGE.md) for:
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 ## Contributing
 
 Contributions welcome! Please open issues or pull requests.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more info.
