@@ -1,7 +1,5 @@
 # Chronapse
 
-![License](https://img.shields.io/github/license/xevrion/Chronapse)
-![Stars](https://img.shields.io/github/stars/xevrion/Chronapse)
 
 **Capture time. Compress moments. Command the lapse.**
 
